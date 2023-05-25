@@ -1,17 +1,18 @@
 import { Document, Schema, model, models } from "mongoose";
+import { IUser } from "./User";
 
 // Interface for User document
-export interface IUser extends Document {
-  recipient: string;
-  sender: string;
+export interface INotification extends Document {
+  recipient: IUser;
+  sender: IUser;
   type: string;
   updatedAt: Date;
 }
 
 // Mongoose schema for User
-const UserSchema = new Schema<IUser>(
+const UserSchema = new Schema<INotification>(
   {
-    name: {
+    recipient: {
       type: String,
       required: true,
     },

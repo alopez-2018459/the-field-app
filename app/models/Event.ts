@@ -3,8 +3,8 @@ import { Document, Schema, model, models} from "mongoose";
 // Interface for Notification document
 export interface IEvent extends Document{
     name: string;
-    description?: string;
-    location?: string;
+    description: string;
+    location: string;
     date: Date;
     sport: string;
 }

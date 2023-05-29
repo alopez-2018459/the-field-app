@@ -30,10 +30,10 @@ const NotificationSchema = new Schema<INotification>({
     type: Date,
     default: Date.now,
   },
-});
+},
+{versionKey: false}
+);
 
-// Register the User model if it's not already registered
-const User = models.User || model<IUser>("User");
 
 // Create and export the Notification model
 const Notification =

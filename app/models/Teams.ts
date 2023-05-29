@@ -52,13 +52,18 @@ const TeamsSchema = new Schema<ITeams>({
       type: Schema.Types.ObjectId,
       ref: "Organization",
       required: [true, "Organization is required"],
-      }
-});
+      },
+    
+},
+{
+  
+  versionKey: false
+}
+);
 
-
-const Organization = models.Organization || model<IOrganization>("Organization");
 const Teams = 
   models.Teams ||
-  model<ITeams>("Teams", TeamsSchema);
+  model<ITeams>("Teams"
+  , TeamsSchema);
 
 export default Teams;

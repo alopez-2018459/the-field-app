@@ -13,6 +13,12 @@ export const UserMenu: FC = () => {
     <div>
       <div className="flex items-center">
 
+        <div
+          onClick={() => setOpen(!open)}
+          aria-hidden="true"
+          className={`max-lg:absolute inset-0 max-lg:w-screen max-lg:h-screen bg-black ${open ? 'max-lg:block opacity-60' : 'max-lg:hidden opacity-0'}`}
+        />
+
         <div className={`fixed lg:top-[60px] max-lg:top-0 left-0 w-[240px] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[90%] h-full transition duration-300 lg:border-y border-r border-gray-200 dark:border-gray-800 
           ${open ? 'max-lg:translate-x-0' : 'max-lg:-translate-x-full'}`}
         >

@@ -27,3 +27,12 @@ html body {
      background: url("../public/images/Logos/LogoDark.png") center/ cover;
   }
 }
+
+.loading-gif{
+  background: #000 url("../public/images/Gif/loading.gif") no-repeat center center;
+  background-size: 15%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}

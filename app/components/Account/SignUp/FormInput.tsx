@@ -16,11 +16,6 @@ const FormInput: FC<Props> = ({
   <div className={!error ? 'p-2 text-red-600' : 'p-2'}>
     <label
       htmlFor=""
-      className={
-          icon
-            ? 'flex justify-between text-[11px] w-full items-center gap-2'
-            : 'text-[11px]'
-        }
     >
       {label}
 

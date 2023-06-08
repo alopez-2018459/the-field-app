@@ -7,7 +7,7 @@ import { signUp } from '@/app/account/signup/actions';
 import { useRouter } from 'next/navigation';
 import FormInput from './FormInput';
 
-function SignUpFirst() {
+function SignUp() {
   const [password, setPassword] = useState('');
 
   const [data, setData] = useState({});
@@ -138,4 +138,4 @@ function SignUpFirst() {
   );
 }
 
-export default SignUpFirst;
+export default SignUp;

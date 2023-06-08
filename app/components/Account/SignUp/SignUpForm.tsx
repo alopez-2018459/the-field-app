@@ -1,5 +1,5 @@
 import React from 'react';
-import SignUpFirst from './SignUp';
+import SignUpFirst from './SignUpFirst';
 
 const SignUpForm = () => (
   <div className="w-full h-full flex justify-center items-center">
